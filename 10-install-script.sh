@@ -25,7 +25,7 @@ fi
 
 dnf list installed git 
 
-if [ $? -ne 0]
+if [ $? -ne 0 ]
 then
     dnf install git -y
     if [ $? -ne 0 ]
@@ -36,5 +36,5 @@ else
      echo "Installing Git ... SUCESS"
 fi
 else
-    echo "Git is alredy .... INSTALLED"
+    echo "Git is already .... INSTALLED"
 fi    
