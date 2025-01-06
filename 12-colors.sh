@@ -33,6 +33,7 @@ echo -e "Mysql is alredy.... $Y installed" $N
 fi 
 
 dnf list installed git
+
 if [ $? -ne 0]
 then
 dnf install git -y
