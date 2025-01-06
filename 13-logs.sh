@@ -37,7 +37,7 @@ then
 dnf install mysql -y &>>$LOGS_FILE_NAME
 VALIDATE $? "Installing SQL"
 else 
-echo -e "Mysql is alredy.... $Y installed" 
+echo -e "Mysql is alredy.... $Y installed $N" 
 fi 
 
 dnf list installed git &>>$LOGS_FILE_NAME
@@ -47,5 +47,5 @@ then
 dnf install git -y &>>$LOGS_FILE_NAME
 VALIDATE $? "Installing Git"
 else 
-     echo -e "Git is alredy.... $Y installed" 
+     echo -e "Git is alredy.... $Y installed $N" 
 fi 
